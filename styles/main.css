@@ -323,6 +323,7 @@ section {
 
     main {
         margin-top: -15px;
+        overflow: hidden;
     }
 
     .sectSpecial {
@@ -351,6 +352,22 @@ section {
     .imgPerks img {
         width: auto;
         height: 180px;
+    }
+
+    .sectData {
+        overflow-y: scroll;
+    }
+
+    .sectData::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .sectData::-webkit-scrollbar-track {
+        background: var(--color-sec);
+    }
+
+    .sectData::-webkit-scrollbar-thumb {
+        background: var(--color-prim);
     }
 
     .proyectos {
