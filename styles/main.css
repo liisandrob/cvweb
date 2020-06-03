@@ -355,6 +355,7 @@ section {
     }
 
     .sectData {
+        margin-top: 6px;
         overflow-y: scroll;
     }
 
