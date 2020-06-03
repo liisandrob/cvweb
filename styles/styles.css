@@ -63,5 +63,6 @@ body {
 
     body {
         padding: 5px;
+        grid-row-gap: 3px;
     }
 }
