@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pip Boy 3000</title>
+    <link rel="icon" type="image/png" href="./assets/icon.png">
+    <link id="linkTheme" rel="stylesheet" href="./styles/themeGreen.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/d32bca1666.js" crossorigin="anonymous"></script>
+</head>
+<body class="theme">
+    <header>
+        <nav>
+            <div class="mainNav">
+                <div>
+                    <i onclick="themeMenuOpenClose()" class="fas fa-cog"></i>
+                    <div class="themeMenu">
+                        <div onclick="cambiarTheme('themeGreen')" class="themeGreen"></div>
+                        <div onclick="cambiarTheme('themeRed')" class="themeRed"></div>
+                        <div onclick="cambiarTheme('themeBlue')" class="themeBlue"></div>
+                    </div>
+                </div>
+                <div>
+                    <ul >
+                        <li id="statNav" class="selectedNav" onclick="abrirSection(0)">STAT</li>
+                        <li id="dataNav" class="unselectedNav" onclick="abrirSection(1)">DATA</li>
+                        <li id="mapNav" class="unselectedNav" onclick="abrirSection(2)">MAP</li>
+                        <li id="radioNav" class="unselectedNav" onclick="abrirSection(3)">RADIO</li>
+                    </ul>
+                </div>
+                <div class="stop" onclick="stopRadio()">
+                    <i class="far fa-stop-circle"></i>
+                    <i class="fas fa-stop-circle"></i>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div class="subNav">
+                <ul class="statNav">
+                    <li id="statusNav" class="selectedSubNav" onclick="manejoSubSector(0)">STATUS</li>    
+                    <li id="specialNav" class="unselectedSubNav" onclick="manejoSubSector(1)">SPECIAL</li>
+                    <li id="perksNav" class="unselectedSubNav" onclick="manejoSubSector(2)">PERKS</li>
+                </ul>
+            </div>
+        </nav>
+            <p class="color-glowing">DEMO MODE</p>
+    </header>
+
+    <main>
+        <section class="sectStat">
+            <section class="sectStatus">
+                <div class="foto">
+                    <img src="./assets/foto.png" alt="Lisandro Blanco">
+                </div>
+                <p>Front End Developer Junior</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/lisandroblancobordenabe/"  target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/liisandrob/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a>
+                    <a href="https://www.facebook.com/lisandro.blanco.9" target="_blank"><i class="fab fa-facebook" target="_blank"></i></a>
+                    <a href="https://twitter.com/liisandrob1"><i class="fab fa-twitter" target="_blank"></i></a>
+                    <a href="https://github.com/liisandrob/"></a><i class="fab fa-github" target="_blank"></i>
+                </div>
+            </section>
+            
+            <section class="sectSpecial">
+                <div class="listSpecial">
+                    <ul>
+                        <li><p>HTML5</p><p>8</p></li>
+                        <li><p>CSS3</p><p>8</p></li>
+                        <li><p>JS</p><p>8</p></li>
+                        <li><p>React.js</p><p>3</p></li>
+                        <li><p>Node.js</p><p>6</p></li>
+                        <li><p>MongoDB</p><p>6</p></li>
+                        <li><p>Rest API</p><p>6</p></li>
+                    </ul>
+                </div>
+                <div class="rightSpecial">
+                    <div class="imgSpecial">
+                        <img id="img-html" src="" alt="HTML5">
+                        <img id="img-css" src="" alt="CSS3">
+                        <img id="img-js" src="./assets/img-js.png" alt="JS">
+                    </div>
+                </div>
+            </section>
+
+            <section class="sectPerks">
+                <div>
+                    <ul class="listPerks">
+                        <li onmouseover="mostrarImgPerk('viajar')">Disponibilidad para viajar</li>
+                        <li onmouseover="mostrarImgPerk('capacitacion')">Autodidacta</li>
+                        <li onmouseover="mostrarImgPerk('proactivo')">Proactivo</li>
+                        <li onmouseover="mostrarImgPerk('equipo')">Trabajo en Equipo</li>
+                        <li onmouseover="mostrarImgPerk('innovador')">Innovador</li>
+                        <li onmouseover="mostrarImgPerk('pet')">Pet Friendly</li>
+                    </ul>
+                </div>
+                <div class="imgPerks">
+                    <img id="viajarImg" src="./assets/viajar.png" alt="Disponibilidad para viajar">
+                    <img id="capacitacionImg" src="./assets/autocap.png" alt="Auto capacitacion">
+                    <img id="proactivoImg" src="./assets/proactivo.png" alt="Proactivo">
+                    <img id="equipoImg" src="/assets/equipo.png" alt="Tranajo en equipo">
+                    <img id="innovadorImg" src="./assets/innovador.png" alt="Innovador">
+                    <img id="petImg" src="./assets/pet-friendly.png" alt="Pet Friendly">
+                </div>
+            </section>
+        </section>
+
+        <section class="sectData">
+
+            <div class="dataText">
+                <p>Curso:</p>
+                <p>Desarrollo Web Fullstack - Acámica</p>
+                <br>
+                <p>En curso:</p>
+                <p>React.JS - Udemy</p>
+                <br>
+                <p>Algunos proyectos:</p>
+                <br>
+            </div>
+            <div class="proyectos">
+                <div class="carousel-cont">
+                    <div class="carousel-btn" >
+                        <i class="fas fa-less-than" onclick="podcast.prev()"></i>
+                    </div>
+                    <div class="carousel-mid" id="podcast">
+                        <div>
+                            <p>Proyecto Podcast</p>
+                        </div>
+                        <div class="carousel-img">
+                            <a href="https://liisandrob.github.io/proyectopodcast/" target="_blank"> Click to visit</a>
+                            <img class="carousel" src="./assets/podcast1-desktop.PNG" alt="">
+                            <img class="carousel" src="./assets/podcast1-mobile.PNG" alt="">
+                            <img class="carousel" src="./assets/podcast2-desktop.PNG" alt="">
+                            <img class="carousel" src="./assets/podcast2-mobile.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-btn" onclick="podcast.next()">
+                        <i class="fas fa-greater-than"></i>
+                    </div>
+                </div>
+    
+                <div class="carousel-cont">
+                    <div class="carousel-btn" >
+                        <i class="fas fa-less-than" onclick="gifos.prev()"></i>
+                    </div>
+                    <div class="carousel-mid" id="gifos">
+                        <div>
+                            <p>Proyecto GifOS</p>
+                        </div>
+                        <div class="carousel-img">
+                            <a> Coming soon</a>
+                            <img class="carousel" src="./assets/guifos1.PNG" alt="">
+                            <img class="carousel" src="./assets/guifos2.PNG" alt="">
+                            <img class="carousel" src="./assets/guifos3.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-btn" onclick="gifos.next()">
+                        <i class="fas fa-greater-than"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="sectMap">
+            <img src="./assets/map.png" alt="Demo de mapa">
+        </section>
+        <section class="sectRadio">
+            <div class="listRadio">
+                <ul>
+                    <li class="radioUnavailable"><span></span>Fallout</li>
+                    <li class="radioUnavailable"><span></span>Fallout 2</li>
+                    <li id="fallout3" class="radioUnselected" onclick="cambiarRadio('fallout3')"><span></span>Fallout 3</li>
+                    <li id="falloutNV" class="radioSelected" onclick="cambiarRadio('falloutNV')"><span></span>Fallout New Vegas</li>
+                    <li id="fallout4" class="radioUnselected" onclick="cambiarRadio('fallout4')"><span></span>Fallout 4</li>
+                    <li id="fallout76" class="radioUnselected" onclick="cambiarRadio('fallout76')"><span></span>Fallout 76</li>
+                </ul>
+            </div>
+            <div class="iframeContainer">
+                <iframe src="https://open.spotify.com/embed/playlist/6GefCJPMmNQhstbWytWSPh" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-left">
+            <p>HP  115/115</p>
+        </div>
+        <div class="footer-middle">
+            <p class="lvlText"></p>
+            <progress id="barraExp" max="365" value="0"></progress>
+        </div>
+        <div class="footer-right">
+            <p>AP 90/90</p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/perks.js"></script>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/moment.js"></script>
+    <script src="./scripts/level.js"></script>
+    <script src="./scripts/radio.js"></script>
+</body>
+</html>

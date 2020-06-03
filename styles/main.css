@@ -1,0 +1,380 @@
+main {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+}
+
+.sectStat {
+    display: block; /* BLOCK | NONE */
+}
+
+.sectStatus {
+    display: flex;  /*  FLEX | NONE     */
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fab {
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: var(--color-sec);
+}
+
+.foto {
+    width: 42vh;
+    height: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img{
+    border: 2px solid var(--color-prim);
+    width: auto;
+    height: 100%;
+    border-radius: 45%;
+    background-color: var(--color-sec);
+}
+
+.sectSpecial {
+    display: none; /*  GRID   |   NONE   */
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.sectSpecial div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.listSpecial {
+    flex-direction: column;
+}
+
+.rightSpecial {
+    flex-direction: column;
+}
+
+.txtSpecial {
+    padding-top: 5%;
+}
+
+.imgSpecial {
+    flex-direction: row;
+    padding-top: 120px;
+}
+
+.sectSpecial div ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectSpecial div ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.sectSpecial div ul li p {
+    font-size: 1.2rem;
+}
+
+.sectSpecial div ul li:hover{
+    background-color: var(--color-prim);
+}
+
+.sectSpecial div ul li:hover > p {
+    background-color: var(--color-prim);
+    color: var(--bg-color);
+}
+
+.imgSpecial img {
+    display: none;
+    background-color: var(--color-prim);
+    height: 300px;
+    width: 350px;
+}
+
+#img-js {
+    display: block;
+}
+
+.sectPerks {
+    display: none;   /* grid | NONE */
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 10px 15px;
+}
+
+.listPerks {
+    height: 100%;
+}
+
+.listPerks li{
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+.listPerks li:hover{
+    background-color: var(--color-prim);
+    color: var(--bg-color);
+}
+
+.imgPerks img {
+    background-color: var(--color-prim);
+    display: none;
+    margin: 0 auto;
+    width: 300px;
+    height: 350px;
+}
+
+.sectData {
+    display: none; /* BLOCK | NONE */
+    width: 100%;
+    height: 100%;
+}
+
+.dataText {
+    padding-left: 30px;
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel-cont {
+    display: flex;
+}
+
+.carousel-cont > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-btn i {
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.carousel-btn i:hover {
+    color: var(--bg-color);
+    background-color: var(--color-prim);
+}
+
+.carousel-mid > div {
+    display: flex;
+}
+
+.carousel-img a {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 4px;
+    border: 2px solid var(--color-prim);
+    background-color: var(--color-sec);
+    text-decoration: none;
+}
+
+.carousel-img {
+    border: 3px solid var(--color-prim);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img a:hover ~ img {
+    filter: blur(2px);
+}
+
+.carousel {
+    background-color: var(--color-sec);
+    width: 300px;
+    height: 192px;
+}
+
+.carousel:hover {
+    filter: blur(2px);
+}
+
+.carousel-img:hover > a{
+    display: block;
+}
+
+.carousel-counter {
+    margin: 5px;
+    content: "";
+    background-color: var(--color-sec);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.counter-on {
+    background-color: var(--color-prim);
+}
+
+.sectMap {
+    display: none; /* FLEX |  NONE */
+    width: 100%;
+    justify-content: center;
+}
+
+.sectMap img{
+    border: 2px solid var(--color-prim);
+    width: auto;
+    height: 100%;
+}
+
+.sectRadio {
+    display: none; /* GRID | NONE */
+    padding: 20px 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.sectRadio div {
+    padding: 10px;
+}
+
+.listRadio ul li{
+    position: relative;
+    font-size: 0.9rem;
+    z-index: 1;
+    width: 85%;
+    display: flex;
+    padding: 10px 6px;
+    align-items: center;
+}
+
+.radioUnselected span {
+    display: inline-block;
+    margin: 0 8px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-color);
+}
+
+.radioUnselected:hover {
+    z-index: 2;
+    cursor: pointer;
+    animation: color-glowing 3s ease-in-out infinite forwards;
+}
+
+
+.radioSelected {
+    border: 3px solid var(--color-prim);
+    margin-left: -3px;
+    z-index: 2;
+} 
+
+.radioSelected span{
+    display: inline-block;
+    margin: 0 8px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-prim);
+}
+
+.radioUnavailable {
+    color: var(--color-sec);
+}
+
+.radioUnavailable span {
+    display: inline-block;
+    margin: 0 8px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-color);
+}
+
+@media screen and (max-width: 440px) {
+    
+    .carousel {
+        width: 200px;
+        height: 95px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #mapNav {
+        display: none;
+    }
+
+    main {
+        margin-top: -15px;
+    }
+
+    .sectSpecial {
+        grid-template-columns: 1fr;
+    }
+
+    .sectSpecial .rightSpecial {
+        display: none;
+    }
+
+    .sectPerks {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 180px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .listPerks li {
+        font-size: 0.75rem;
+    }
+
+    .imgPerks {
+        height: auto;
+    }
+
+    .imgPerks img {
+        width: auto;
+        height: 180px;
+    }
+
+    .proyectos {
+        flex-direction: column;
+    }
+
+    .carousel-btn i {
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    .carousel-counter {
+        height: 5px;
+        width: 5px;
+    }
+
+    .dataText {
+        font-size: 0.5rem;
+    }
+
+    .sectRadio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 100px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
