@@ -9,6 +9,7 @@ function resetImgPerks() {
     document.getElementById("capacitacionImg").style.display = "none";
     document.getElementById("proactivoImg").style.display = "none";
     document.getElementById("equipoImg").style.display = "none";
+    document.getElementById("adaptableImg").style.display = "none";
     document.getElementById("innovadorImg").style.display = "none";
     document.getElementById("petImg").style.display = "none";
 }

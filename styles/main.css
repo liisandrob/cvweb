@@ -193,6 +193,7 @@ section {
 
 .carousel-img {
     border: 3px solid var(--color-prim);
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -326,8 +327,15 @@ section {
         overflow: hidden;
     }
 
+    .sectStatus {
+        margin-top: 6px;
+        overflow-y: scroll;
+    }
+
     .sectSpecial {
         grid-template-columns: 1fr;
+        margin-top: 6px;
+        overflow-y: scroll;
     }
 
     .sectSpecial .rightSpecial {
@@ -339,6 +347,8 @@ section {
         grid-template-rows: 1fr 180px;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        margin-top: 6px;
+        overflow-y: scroll;
     }
 
     .listPerks li {
@@ -359,15 +369,15 @@ section {
         overflow-y: scroll;
     }
 
-    .sectData::-webkit-scrollbar {
+    *::-webkit-scrollbar {
         width: 5px;
     }
 
-    .sectData::-webkit-scrollbar-track {
+    *::-webkit-scrollbar-track {
         background: var(--color-sec);
     }
 
-    .sectData::-webkit-scrollbar-thumb {
+    *::-webkit-scrollbar-thumb {
         background: var(--color-prim);
     }
 
@@ -394,5 +404,7 @@ section {
         grid-template-rows: 1fr 100px;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        margin-top: 6px;
+        overflow-y: scroll;
     }
 }
