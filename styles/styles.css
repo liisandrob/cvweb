@@ -66,3 +66,15 @@ body {
         grid-row-gap: 3px;
     }
 }
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-sec);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--color-prim);
+}

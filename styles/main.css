@@ -1,5 +1,6 @@
 main {
     height: 100%;
+    position: relative;
 }
 
 section {
@@ -25,8 +26,8 @@ section {
 
 .foto {
     width: 42vh;
-    height: 80%;
-    margin-bottom: 20px;
+    height: 50%;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
@@ -35,7 +36,6 @@ section {
     border: 2px solid var(--color-prim);
     width: auto;
     height: 100%;
-    border-radius: 45%;
     background-color: var(--color-sec);
 }
 
@@ -367,18 +367,6 @@ section {
     .sectData {
         margin-top: 6px;
         overflow-y: scroll;
-    }
-
-    *::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    *::-webkit-scrollbar-track {
-        background: var(--color-sec);
-    }
-
-    *::-webkit-scrollbar-thumb {
-        background: var(--color-prim);
     }
 
     .proyectos {
