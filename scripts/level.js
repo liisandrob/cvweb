@@ -22,7 +22,8 @@ function cumpliAnios () {
 
 function level () {
     let nivel = parseInt(moment([1992, 8, 17]).fromNow(true).split(" ", 1));
-    cumpliAnios() ? nivel : nivel  = nivel -1;
+    console.log(nivel)
+    cumpliAnios() ? nivel = nivel + 1 : nivel;
     document.querySelector(".lvlText").textContent = `LEVEL ${nivel}`;
 }
 
